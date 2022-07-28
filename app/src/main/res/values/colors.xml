@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_dialog">#E08C0D</color>
+    <color name="bg_dialog2">#E0490D</color>
+    <color name="dialogTaskColor">#D81B2B</color>
+    <color name="dialogCalendarColor">#DA464F</color>
+</resources>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/dialogTaskColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Ajouter une tache "
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:layout_margin="3dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/boxes"
+                android:layout_marginTop="15px"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:padding="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="25px"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:text="Qu'y a-t-il à faire*"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/labeledt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg"
+                            android:inputType="textCapSentences"
+                            android:hint="Sport / School / Work "
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/micbtn"
+                        android:layout_gravity="bottom"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/mic"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:padding="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="25px"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:text="Date*"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/dateedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg"
+                            android:inputType="textCapSentences"
+                            android:padding="5px"
+                            android:hint="jj/mm/aaaa"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/cal_btn"
+                        android:layout_gravity="bottom"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/today"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="25px"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Heure*"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/timeedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:padding="5px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/btn_bg"
+                            android:hint="08:00"
+                            android:inputType="number"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/timebtn"
+                        android:layout_gravity="bottom"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/time"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+
+                <TextView
+                        android:padding="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25px"
+                        android:layout_weight="2"
+                        android:fontFamily="cursive"
+                        android:text="Détails"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <EditText
+                        android:id="@+id/detailsedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:padding="5px"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:inputType="textCapSentences"
+                        android:textColor="#ff9a0e32"
+                        android:hint="Ne pas oublier de .."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Réveil*"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/revgrp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+
+                            <RadioButton
+                                android:id="@+id/Ouibtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Oui"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:fontFamily="cursive"/>
+
+                            <RadioButton
+                                android:id="@+id/Nonbtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Non"
+                                android:checked="true"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:fontFamily="cursive"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:id="@+id/addBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter"
+                        android:textColor="#ff9a4025"
+                        app:backgroundTint="#fff"
+                        android:layout_margin="5px"/>
+
+                    <Button
+                        android:id="@+id/cancelBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="annuler"
+                        android:textColor="#ff9a4025"
+                        app:backgroundTint="#fff"
+                        android:layout_margin="5px"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

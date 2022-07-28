@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/bg_dialog"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Ajouter une journée "
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:layout_margin="3dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/boxes"
+                android:layout_marginTop="15px"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="3sp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:padding="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="25px"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:text="Nbre des jours*"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/ndjedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg"
+                            android:inputType="number"
+                            android:padding="5px"
+                            android:text="1"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="3sp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25px"
+                            android:layout_weight="2"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:padding="5sp"
+                            android:text="Prix des jours*"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/pdjedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="5px"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg"
+                            android:inputType="number"
+                            android:textColor="#ff9a0e32"
+                            android:hint="20DT"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_margin="3sp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:text="Heure debut*"
+                            android:textAlignment="viewStart"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/hdedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:padding="5px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/btn_bg"
+                            android:hint="8H"
+                            android:inputType="number"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="3sp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:text="Heure fin*"
+                            android:textAlignment="viewStart"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/hfedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="5px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_bg"
+                            android:hint="4H"
+                            android:inputType="number"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25px"
+                        android:layout_weight="2"
+                        android:fontFamily="cursive"
+                        android:text="Détails"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <EditText
+                        android:id="@+id/detailsedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:padding="5px"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:inputType="textCapCharacters"
+                        android:textColor="#ff9a0e32" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Dejeuner*"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/dejgrp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_gravity="center">
+
+                            <RadioButton
+                                android:id="@+id/Ouibtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Oui"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:fontFamily="cursive"/>
+
+                            <RadioButton
+                                android:id="@+id/Nonbtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Non"
+                                android:checked="true"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:fontFamily="cursive"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    >
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/addBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter"
+                        android:textColor="#ff9a4025"
+                        app:backgroundTint="#fff"
+                        android:layout_margin="5px"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/cancelBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="annuler"
+                        android:textColor="#ff9a4025"
+                        app:backgroundTint="#fff"
+                        android:layout_margin="5px"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

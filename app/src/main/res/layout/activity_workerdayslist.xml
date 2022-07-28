@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Worker.ListWorker"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Liste des jours "
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_margin="5px"/>
+
+    <ListView
+        android:id="@+id/listView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/clearBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vider la liste"
+            android:textSize="12sp"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"
+            android:layout_margin="5px"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/returnBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retourner"
+            android:textSize="12sp"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"
+            android:layout_margin="5px"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

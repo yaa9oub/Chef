@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20sp"
+    android:background="@drawable/bg"
+    tools:context=".Worker.AddWorker">
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Paramétre du Profile "
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="left"
+                    android:text="Nom et prénom"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/nameedt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:inputType="textCapSentences"
+                    android:textColor="#ff9a0e32" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="left"
+                    android:text="Telephone"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/phoneedt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:inputType="phone"
+                    android:textColor="#ff9a0e32" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="left"
+                    android:text="Prix de jour"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pdjedt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:inputType="number"
+                    android:textColor="#ff9a0e32" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:gravity="left"
+                    android:text="Payé"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/payeedt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:inputType="number"
+                    android:textColor="#ff9a0e32" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="3sp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:text="Dejeuner*"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/dejgrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/Ouibtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Oui"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:fontFamily="cursive"
+                            android:layout_marginLeft="50dp"/>
+
+                        <RadioButton
+                            android:id="@+id/Nonbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Non"
+                            android:checked="true"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:fontFamily="cursive"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/savebtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

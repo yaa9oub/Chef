@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5sp"
+    android:paddingTop="10dp"
+    android:gravity="center"
+    tools:context=".Worker.AddWorker"
+    android:background="@drawable/bg"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_below="@+id/icon_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Ajouter un travaille "
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/boxes"
+                android:layout_marginTop="15px"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="3sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Label"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <EditText
+                        android:id="@+id/labeledt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Clinique / Bank "
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:inputType="textCapSentences"
+                        android:padding="5px"
+                        android:textColor="#ff9a0e32" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="3sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Emplacement"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <EditText
+                        android:id="@+id/placeedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:padding="5px"
+                        android:hint="Gabes / Tunes / Sfax "
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:inputType="textCapSentences"
+                        android:textColor="#ff9a0e32" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="3sp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:padding="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:text="Contact"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+
+                    <EditText
+                        android:id="@+id/contactedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Numero du directeur "
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:inputType="phone"
+                        android:padding="5px"
+                        android:textColor="#ff9a0e32" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="3sp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:padding="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:text="Durée"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/durationedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="Environs 20 jours"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg"
+                            android:inputType="number"
+                            android:padding="5px"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="3sp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:padding="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_gravity="center"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:text="Nbre des ouvriers"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                        <EditText
+                            android:id="@+id/workersedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:hint="3 ouvriers"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_bg"
+                            android:inputType="number"
+                            android:padding="5px"
+                            android:textColor="#ff9a0e32" />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:gravity="center"
+            android:layout_below="@+id/boxes"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/savebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enregistrer"
+                android:textSize="13sp"
+                android:textColor="#ff9a4025"
+                app:backgroundTint="#fff"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/databtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="liste des travailles"
+                android:textSize="13sp"
+                android:textColor="#ff9a4025"
+                app:backgroundTint="#fff"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:textSize="13sp"
+                android:textColor="#ff9a4025"
+                app:backgroundTint="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

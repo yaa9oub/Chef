@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Worker.ListWorker"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Liste des travailleurs "
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_margin="5px"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center_vertical|left">
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/ndjtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NDJ"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/pdjtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PPJ"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:id="@+id/totaltxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payé"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+1 Jour"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </ListView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/addbtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:textSize="12sp"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/clearBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vider la liste"
+            android:textSize="12sp"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"
+            android:layout_margin="5px"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/returnBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retourner"
+            android:textSize="12sp"
+            android:textColor="#ff9a4025"
+            app:backgroundTint="#fff"
+            android:layout_margin="5px"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left">
+
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME HERE"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/ndjtxt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ndj"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/pdjtxt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="prix"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:id="@+id/totaltxt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="total"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:id="@+id/payetxt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="payé"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#fff"/>
+
+
+        <TextView
+            android:id="@+id/plustxt"
+            android:gravity="center"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@mipmap/btnplus"
+            android:layout_margin="10px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
